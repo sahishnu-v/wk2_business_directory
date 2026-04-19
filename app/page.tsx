@@ -88,7 +88,7 @@ const cards: Card[] = [
     phone: '(925) 555-0808',
     email: 'luis@fernandezelectric.com',
     website: 'https://fernandezelectric.com',
-    category: 'Services',
+    category: 'AI',
   },
   {
     name: 'Naomi Blackwell',
@@ -110,7 +110,7 @@ const categoryColors: Record<string, string> = {
   Restaurant: 'bg-orange-100 text-orange-800',
   Education: 'bg-purple-100 text-purple-800',
   'Real Estate': 'bg-teal-100 text-teal-800',
-  Services: 'bg-gray-100 text-gray-800',
+  AI: 'bg-teal-100 text-gray-800',
 };
 
 // =============================================================
