@@ -17,7 +17,6 @@ function validateEmail(email: string): boolean {
 }
 
 function validatePhone(phone: string): boolean {
-  // Accepts: (925)-555-0101 or 9255550101
   return /^\(\d{3}\)-\d{3}-\d{4}$|^\d{10}$/.test(phone.trim());
 }
 
@@ -71,7 +70,6 @@ export default function ContactPage() {
     const errs = validate(form);
     setErrors(errs);
     if (Object.keys(errs).length > 0) return;
-    // Hook up your API/email service here
     setSubmitted(true);
   };
 
@@ -89,7 +87,7 @@ export default function ContactPage() {
           Contact Us
         </h1>
         <p className="text-lg text-gray-600">
-          We'd love to hear from you. Fill out the form and we'll be in touch.
+          We&apos;d love to hear from you. Fill out the form and we&apos;ll be in touch.
         </p>
       </header>
 
@@ -103,7 +101,7 @@ export default function ContactPage() {
               Message Sent!
             </h2>
             <p className="text-gray-600 mb-6">
-              Thanks, {form.name}. We'll get back to you at {form.email} shortly.
+              Thanks, {form.name}. We&apos;ll get back to you at {form.email} shortly.
             </p>
             <button
               onClick={() => {
