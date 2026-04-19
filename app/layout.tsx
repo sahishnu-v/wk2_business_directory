@@ -1,3 +1,4 @@
+// @ts-ignore: side-effect import of global stylesheet
 import './globals.css';
 import type { Metadata } from 'next';
 
